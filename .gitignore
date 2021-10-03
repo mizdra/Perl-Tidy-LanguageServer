@@ -29,3 +29,4 @@ cover_db/
 MYMETA.*
 
 /Perl-Tidy-LanguageServer-*
+/.vscode/perl-lang/
