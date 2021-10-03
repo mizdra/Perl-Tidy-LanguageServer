@@ -52,6 +52,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/mizdra/Perl-Tidy-LanguageServer/issues"
+      },
+      "homepage" : "https://github.com/mizdra/Perl-Tidy-LanguageServer",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/mizdra/Perl-Tidy-LanguageServer.git",
+         "web" : "https://github.com/mizdra/Perl-Tidy-LanguageServer"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "JSON::PP version 4.04",
    "x_static_install" : 1
