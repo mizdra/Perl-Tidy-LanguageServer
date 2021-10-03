@@ -1,22 +1,39 @@
-# NAME
+package Perl::Tidy::LanguageServer;
+use 5.008001;
+use strict;
+use warnings;
+
+our $VERSION = "0.01";
+
+
+
+1;
+__END__
+
+=encoding utf-8
+
+=head1 NAME
 
 Perl::Tidy::LanguageServer - It's new $module
 
-# SYNOPSIS
+=head1 SYNOPSIS
 
     use Perl::Tidy::LanguageServer;
 
-# DESCRIPTION
+=head1 DESCRIPTION
 
 Perl::Tidy::LanguageServer is ...
 
-# LICENSE
+=head1 LICENSE
 
 Copyright (C) mizdra.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
-# AUTHOR
+=head1 AUTHOR
 
-mizdra <pp.mizdra@gmail.com>
+mizdra E<lt>pp.mizdra@gmail.comE<gt>
+
+=cut
+

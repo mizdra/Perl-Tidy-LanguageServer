@@ -1,0 +1,1 @@
+{"version":5,"vars":[{"definition":1,"kind":2,"name":"Perl::Tidy::LanguageServer","line":0},{"line":2,"containerName":"","name":"strict","kind":2},{"containerName":"","name":"warnings","kind":2,"line":3},{"line":5,"kind":13,"definition":"our","containerName":"Perl::Tidy::LanguageServer","name":"$VERSION"}]}
