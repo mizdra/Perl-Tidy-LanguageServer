@@ -1,0 +1,29 @@
+name: Perl
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        perl-version: 
+          - '5.26'
+          - '5.28'
+          - '5.30'
+          - '5.32'
+          - '5.34'
+    runs-on: ubuntu-latest
+    name: Perl ${{ matrix.perl-version }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: ${{ matrix.perl-version }}
+          install-modules-with: cpanm
+
+      - name: Remove Perl Problem Matcher
+        run: echo "::remove-matcher owner=perl::"
+
+      - run: prove -Ilib -lv t
