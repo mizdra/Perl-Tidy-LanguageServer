@@ -3,9 +3,7 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.01";
-
-
+use version 0.77; our $VERSION = version->declare("v0.0.1");
 
 1;
 __END__
