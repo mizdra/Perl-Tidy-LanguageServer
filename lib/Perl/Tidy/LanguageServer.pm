@@ -12,7 +12,7 @@ __END__
 
 =head1 NAME
 
-Perl::Tidy::LanguageServer - It's new $module
+Perl::Tidy::LanguageServer - Language Server for Perltidy
 
 =head1 SYNOPSIS
 

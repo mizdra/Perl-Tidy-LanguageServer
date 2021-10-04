@@ -1,6 +1,6 @@
 # NAME
 
-Perl::Tidy::LanguageServer - It's new $module
+Perl::Tidy::LanguageServer - Language Server for Perltidy
 
 # SYNOPSIS
 

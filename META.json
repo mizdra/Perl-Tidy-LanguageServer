@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Language Server for Perltidy",
    "author" : [
       "mizdra <pp.mizdra@gmail.com>"
    ],
@@ -63,7 +63,7 @@
          "web" : "https://github.com/mizdra/Perl-Tidy-LanguageServer"
       }
    },
-   "version" : "0.01",
+   "version" : "v0.0.1",
    "x_serialization_backend" : "JSON::PP version 4.04",
    "x_static_install" : 1
 }
