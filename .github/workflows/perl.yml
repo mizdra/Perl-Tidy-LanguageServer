@@ -25,7 +25,7 @@ jobs:
           install-modules-args: --with-develop
       
       # perltidy
-      - run: make perltidy-fix
+      - run: ./run perltidy:fix
       - name: Comment suggestion(s)
         uses: reviewdog/action-suggester@v1
         with:
