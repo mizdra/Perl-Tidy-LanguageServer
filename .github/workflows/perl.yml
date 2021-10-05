@@ -1,6 +1,10 @@
 name: Perl
 
-on: [push]
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   test:
@@ -22,8 +26,16 @@ jobs:
         with:
           perl-version: ${{ matrix.perl-version }}
           install-modules-with: cpanm
-
-      - name: Remove Perl Problem Matcher
-        run: echo "::remove-matcher owner=perl::"
+          install-modules-args: --with-develop
+      
+      # perltidy
+      - run: ./run perltidy:fix
+      - name: Comment suggestion(s)
+        uses: reviewdog/action-suggester@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tool_name: perltidy
+          level: error
+          fail_on_error: true
 
       - run: prove -Ilib -lv t

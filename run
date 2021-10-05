@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+subcommand="$1"
+shift
+
+case $subcommand in
+  perltidy:fix)
+    perltidy --pro=./.perltidyrc -b -bext='/' $(git ls-files '*.pm' '*.t')
+    ;;
+  *)
+    echo "`run $1` not found."  >&2
+    ;;
+esac
