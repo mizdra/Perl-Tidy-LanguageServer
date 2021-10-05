@@ -22,6 +22,7 @@ jobs:
         with:
           perl-version: ${{ matrix.perl-version }}
           install-modules-with: cpanm
+          install-modules-args: --with-develop
       
       # perltidy
       - run: make perltidy-fix
