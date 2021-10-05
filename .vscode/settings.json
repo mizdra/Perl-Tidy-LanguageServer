@@ -1,0 +1,6 @@
+{
+  "[perl]": {
+    "editor.defaultFormatter": "Kaktus.perltidy-more",
+    "editor.formatOnSave": true
+  }
+}
