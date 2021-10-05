@@ -24,7 +24,7 @@ jobs:
           install-modules-with: cpanm
       
       # perltidy
-      - run: make perltidy:fix
+      - run: make perltidy-fix
       - name: Comment suggestion(s)
         uses: reviewdog/action-suggester@v1
         with:
