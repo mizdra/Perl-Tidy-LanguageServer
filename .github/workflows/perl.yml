@@ -22,5 +22,15 @@ jobs:
         with:
           perl-version: ${{ matrix.perl-version }}
           install-modules-with: cpanm
-          
+      
+      # perltidy
+      - run: make perltidy:fix
+      - name: Comment suggestion(s)
+        uses: reviewdog/action-suggester@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tool_name: perltidy
+          level: error
+          fail_on_error: true
+
       - run: prove -Ilib -lv t
